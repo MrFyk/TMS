@@ -1,0 +1,1 @@
+import{pt as t}from"./naive-ui-sHr6K_fW.js";import{G as e}from"./vendor-B06AIgN9.js";import{t as a}from"./commStore-CunX0siO.js";function o(){const{dictMap:o}=e(a()),r=t(()=>t=>o.value&&o.value[t]||[]);return{getDictEnum:r,getDictLabel:t(()=>(t,e)=>r.value(e).find(e=>e.value===t)?.label||"")}}export{o as t};
