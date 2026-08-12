@@ -1,0 +1,1 @@
+import{_t as r,zt as t}from"./naive-ui-sHr6K_fW.js";import{c as a}from"./index-BAGX1A_5.js";var e=a({},[["render",function(a,e){return t(),r("div")}]]);export{e as default};
