@@ -1,0 +1,1 @@
+import{Qt as t,Ut as e,bt as a,ht as n,xt as s,zt as r}from"./naive-ui-Ctw2A3QO.js";import{t as o}from"./OverviewScheme-BQRlM-0-.js";var i=s({__name:"index",setup:s=>(s,i)=>{const d=e("MxWebPage");return r(),n(d,{contentPadding:"0px",contentBg:"transparent",contentRadius:"0px",hideAddBtn:!0},{content:t(()=>[a(o)]),_:1})}});export{i as default};
