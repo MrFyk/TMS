@@ -1,0 +1,1 @@
+import{_t as r,zt as t}from"./naive-ui-Ctw2A3QO.js";import{s as n}from"./index-uL_fmPFS.js";var o=n({},[["render",function(n,o){return t(),r("div",null,"404 Not Found")}]]);export{o as default};
