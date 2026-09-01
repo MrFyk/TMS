@@ -1,0 +1,1 @@
+import{Vt as r,yt as t}from"./naive-ui-Z36ua9eI.js";import{s as n}from"./index-CfHrNDN1.js";var o=n({},[["render",function(n,o){return r(),t("div",null,"404 Not Found")}]]);export{o as default};
