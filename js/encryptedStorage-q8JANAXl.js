@@ -1,1 +1,0 @@
-import{r as e}from"./rolldown-runtime-NMqb_1LM.js";import{W as t}from"./vendor-WsLFMq6N.js";var r=e(t(),1),o=e=>{const t=new r.default.default({encodingType:"aes",encryptionSecret:e,isCompression:!1,storage:sessionStorage});return{setItem(e,r){t.set(e,r)},getItem:e=>t.get(e),removeItem(e){t.remove(e)}}};export{o as t};

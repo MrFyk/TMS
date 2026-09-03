@@ -1,0 +1,1 @@
+import{Bt as r,vt as t}from"./naive-ui-Dv1qjqxI.js";import{s as a}from"./index-B5W98K8q.js";var e=a({},[["render",function(a,e){return r(),t("div")}]]);export{e as default};
