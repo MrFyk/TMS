@@ -1,1 +1,0 @@
-import{Ut as r,xt as t}from"./naive-ui-8yPKA5q4.js";import{s as a}from"./index-DPw1g5nG.js";var e=a({},[["render",function(a,e){return r(),t("div")}]]);export{e as default};
