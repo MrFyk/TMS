@@ -1,1 +1,0 @@
-import{Ut as r,xt as t}from"./naive-ui-8yPKA5q4.js";import{s as n}from"./index-BSqkaRBO.js";var o=n({},[["render",function(n,o){return r(),t("div",null,"404 Not Found")}]]);export{o as default};
