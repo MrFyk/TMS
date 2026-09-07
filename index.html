@@ -4,6 +4,59 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
         <title>智慧矿山・安全生产</title>
 
+        <!-- 公告分享链接预览：同步注入 og 标签（爬虫不执行 JS，必须在应用加载前设置） -->
+        <script>
+            (function () {
+                var hash = location.hash || '';
+                var m = hash.match(/#\/announcement\/share\/(\d+)/);
+                if (!m) return;
+                var id = m[1];
+                var priorityMap = { '1': '紧急', '2': '重要', '3': '普通' };
+
+                // 内联公告数据快照（与 mockData.ts 保持同步）
+                var announcements = {
+                    '1': { title: '关于长江上游航道实施交通管制的通告', source: '长江航务管理局', priority: 1, content: '因长江上游水域进行航道疏浚作业，自2026年9月1日起至2026年9月15日止，对长江上游水富港至宜宾江段实施交通管制。管制期间禁止所有货运船舶通行，请各运输单位提前调整运输计划，合理安排货物装卸。' },
+                    '2': { title: '雷波县交通运输局关于矿山公路限行的通知', source: '雷波县交通运输局', priority: 2, content: '因矿山公路（卡坪至59KM段）路面维修施工，自2026年8月25日起对上述路段实施限行措施，每日7:00-19:00禁止载重20吨以上货车通行。请各物流运输单位提前做好运输调度安排。' },
+                    '3': { title: '关于开展2026年度水上交通安全专项检查的通知', source: '四川海事局', priority: 3, content: '根据《水上交通安全管理条例》规定，四川海事局将于2026年9月1日至9月30日开展水上交通安全专项检查。请各航运企业做好船舶安全自查工作，确保船舶证书齐全、消防救生设备完好。' },
+                    '4': { title: '枝城港关于泊位调整的公告', source: '枝城港务局', priority: 2, content: '因港口泊位升级改造，3号、4号泊位自2026年9月10日起暂停使用，预计工期30天。在此期间到港船舶请使用1号、2号泊位进行装卸作业，请各相关单位提前与港方联系确认泊位安排。' },
+                };
+                var a = announcements[id];
+                if (!a) return;
+
+                var title = (priorityMap[String(a.priority)] || '通知') + '｜' + a.title;
+                var desc = (a.content || '').slice(0, 80) + (a.content.length > 80 ? '...' : '');
+
+                // 生成 SVG 缩略图
+                var colorMap = { '1': ['#e8514a', '#d63333'], '2': ['#f0a93a', '#e08a18'], '3': ['#3a6df0', '#2c65f2'] };
+                var colors = colorMap[String(a.priority)] || colorMap['3'];
+                var shortTitle = a.title.length > 16 ? a.title.slice(0, 16) + '...' : a.title;
+                var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="' + colors[0] + '"/><stop offset="1" stop-color="' + colors[1] + '"/></linearGradient></defs><rect width="400" height="300" fill="url(#g)"/><text x="200" y="140" text-anchor="middle" font-size="22" font-weight="bold" fill="#fff" font-family="sans-serif">' + shortTitle + '</text><text x="200" y="180" text-anchor="middle" font-size="14" fill="rgba(255,255,255,0.85)" font-family="sans-serif">' + a.source + '</text></svg>';
+                var thumb = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+
+                document.title = title;
+
+                var setMeta = function (attr, key, content) {
+                    var el = document.head.querySelector('meta[' + attr + '="' + key + '"]');
+                    if (!el) {
+                        el = document.createElement('meta');
+                        el.setAttribute(attr, key);
+                        document.head.appendChild(el);
+                    }
+                    el.setAttribute('content', content);
+                };
+                setMeta('property', 'og:title', title);
+                setMeta('property', 'og:description', desc);
+                setMeta('property', 'og:image', thumb);
+                setMeta('property', 'og:url', location.href);
+                setMeta('property', 'og:type', 'article');
+                setMeta('property', 'og:site_name', 'TMS运输管理系统');
+                setMeta('name', 'twitter:card', 'summary_large_image');
+                setMeta('name', 'twitter:title', title);
+                setMeta('name', 'twitter:description', desc);
+                setMeta('name', 'twitter:image', thumb);
+            })();
+        </script>
+
         <script src="./public-path.js"></script>
         <script type="text/javascript" src="https://lf-scm-cn.feishucdn.com/lark/op/h5-js-sdk-1.5.44.js"></script>
         <!-- <script async src="https://lf-package-cn.feishucdn.com/obj/feishu-static/op/fe/devtools_frontend/remote-debug-0.0.1-alpha.6.js"></script> -->
