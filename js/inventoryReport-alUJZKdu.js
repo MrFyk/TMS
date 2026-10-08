@@ -1,1 +1,0 @@
-import{Ut as s,Yt as t,_n as a,xt as r,yt as m}from"./naive-ui-DP_iP8cA.js";import{f as o}from"./comm-CKsVFxIh.js";import e from"./app-l67h7a3h.js";import i from"./web-YkHJ4tjH.js";var p={__name:"index",setup(p){const n=o();return(o,p)=>(s(),r("div",null,[(s(),m(t(a(n)?e:i)))]))}};export{p as default};
