@@ -1,0 +1,1 @@
+import{St as s,Wt as t,Xt as a,bt as r,vn as m}from"./naive-ui-B0t_VV2D.js";import{f as o}from"./comm-DW_TXBl3.js";import e from"./app-L_m76d2b.js";import i from"./web-CjzwMHhw.js";var p={__name:"index",setup(p){const n=o();return(o,p)=>(t(),s("div",null,[(t(),r(a(m(n)?e:i)))]))}};export{p as default};
