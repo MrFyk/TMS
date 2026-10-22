@@ -1,0 +1,1 @@
+import{Ct as t,Ot as e,Zt as n,kt as a,on as s,qt as o}from"./naive-ui-BHfQ8ccA.js";import{t as r}from"./OverviewScheme-Bm8f1ojH.js";var i=a({__name:"index",setup:a=>(a,i)=>{const d=n("MxWebPage");return o(),t(d,{contentPadding:"0px",contentBg:"transparent",contentRadius:"0px",hideAddBtn:!0},{content:s(()=>[e(r)]),_:1})}});export{i as default};

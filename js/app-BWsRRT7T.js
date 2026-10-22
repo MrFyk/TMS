@@ -1,0 +1,1 @@
+import{n as r}from"./rolldown-runtime-DwynqlJ6.js";import{Tt as t,qt as e}from"./naive-ui-BHfQ8ccA.js";import{t as o}from"./_plugin-vue_export-helper-DgLP3hnZ.js";var a=r({default:()=>n});var n=o({},[["render",function(r,o){return e(),t("div")}]]);export{a as n,n as t};
