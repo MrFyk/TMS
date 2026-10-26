@@ -1,1 +1,0 @@
-import{Et as t,Jt as e,Tt as a,Wt as n,bt as s,rn as r}from"./naive-ui-B0t_VV2D.js";import{t as o}from"./OverviewScheme-CcGI44Dk.js";var i=t({__name:"index",setup:t=>(t,i)=>{const d=e("MxWebPage");return n(),s(d,{contentPadding:"0px",contentBg:"transparent",contentRadius:"0px",hideAddBtn:!0},{content:r(()=>[a(o)]),_:1})}});export{i as default};
