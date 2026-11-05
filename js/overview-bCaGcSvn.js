@@ -1,0 +1,1 @@
+import{Kt as a,Ot as t,St as s}from"./naive-ui-9BiPMXWm.js";import{t as e}from"./web-FuLnigqf.js";var r=t({__name:"index",setup:t=>(t,r)=>(a(),s(e))});export{r as default};
