@@ -1,0 +1,1 @@
+import{mn as e,rn as n}from"./naive-ui-9BiPMXWm.js";import{t}from"./useReservoirAreaOptions-B5TjgzuP.js";function o(){const{areaOptions:o}=t({excludeCustomer:!0}),r=e(null);return n(o,e=>{if(!e.length)return;const n=e.find(e=>e.value===r.value)||e[0];r.value=n.value},{immediate:!0}),{selectedRegionCode:r,regionOptions:o}}export{o as t};
